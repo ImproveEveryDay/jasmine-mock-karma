@@ -1,0 +1,30 @@
+{
+  "name": "jasmine-mock-karma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jquery": "^3.1.0",
+    "karma": "^1.1.0",
+    "karma-bamboo-reporter": "^0.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^2.0.4",
+    "karma-sinon": "^1.0.5",
+    "mocha-bamboo-reporter": "^1.1.1",
+    "sinon": "^1.17.4"
+  },
+  "scripts": {
+    "bamboo": "node node_modules/mocha/bin/mocha -R mocha-bamboo-reporter",
+    "test-single-run": "karma start karma.conf.js --single-run",
+    "test": "karma start karma.conf.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
+  }
+}
